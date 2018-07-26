@@ -1,0 +1,11 @@
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentService\StudentDataAccess\bin\Debug\StudentDataAccess.dll.config
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentService\StudentDataAccess\bin\Debug\StudentDataAccess.dll
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentService\StudentDataAccess\bin\Debug\StudentDataAccess.pdb
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentService\StudentDataAccess\bin\Debug\EntityFramework.dll
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentService\StudentDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentService\StudentDataAccess\bin\Debug\EntityFramework.xml
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentService\StudentDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentService\StudentDataAccess\obj\Debug\StudentDataAccess.csproj.CoreCompileInputs.cache
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentService\StudentDataAccess\obj\Debug\StudentDataAccess.csproj.CopyComplete
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentService\StudentDataAccess\obj\Debug\StudentDataAccess.dll
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentService\StudentDataAccess\obj\Debug\StudentDataAccess.pdb
