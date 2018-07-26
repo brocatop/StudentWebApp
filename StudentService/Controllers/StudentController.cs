@@ -3,26 +3,85 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Net.Http;
-using System.Web.Http;
+using System.Web;
+using System.Web.Mvc;
 
 namespace StudentService.Controllers
 {
-    public class StudentController : ApiController
+    public class StudentController : Controller
     {
-        public IEnumerable<Student> Get()
+        StudentsEntities std = new StudentsEntities();
+ 
+       
+        // GET: Student
+        public ActionResult Index()
         {
-            using (StudentsEntities e = new StudentsEntities())
-            {
-                return e.Students.ToList();
-            }
+            List<Student> studentList = std.Students.ToList();
+            return View(studentList);
         }
 
-        public Student Get(int id)
+        public ActionResult Create()
         {
-            using (StudentsEntities e = new StudentsEntities())
+            return View();
+        }
+
+
+        public ActionResult Edit(int id)
+        {
+            List<Student> studentList = std.Students.ToList();
+            var student = studentList.Where(s => s.StudentID == id).FirstOrDefault();
+
+            return View(student);
+        }
+
+        public ActionResult Details(int? id)
+        {
+            if (id == null)
             {
-                return e.Students.FirstOrDefault(s => s.StudentID == id);
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Student student = std.Students.Find(id);
+            if (student == null)
+            {
+                return HttpNotFound();
+            }
+            return View(student);
+        }
+
+        public ActionResult Delete(FormCollection fcNotUsed, int id = 0)
+        {
+            Student student = std.Students.Find(id);
+            if (student == null)
+            {
+                return HttpNotFound();
+            }
+            std.Students.Remove(student);
+            std.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public ActionResult Edit(Student std)
+        {
+            //write code to update student 
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public ActionResult Create(Student student)
+        {
+
+            if (ModelState.IsValid)
+            {
+                std.Students.Add(student);
+                std.SaveChanges();
+
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View(student);
             }
         }
     }

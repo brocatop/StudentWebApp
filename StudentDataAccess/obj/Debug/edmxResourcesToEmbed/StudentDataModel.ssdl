@@ -8,7 +8,6 @@
     <Property Name="FirstName" Type="varchar" MaxLength="255" />
     <Property Name="LastName" Type="varchar" MaxLength="255" />
     <Property Name="Major" Type="varchar" MaxLength="255" />
-    <Property Name="StudentPassword" Type="varchar" MaxLength="255" />
   </EntityType>
   <EntityContainer Name="StudentsModelStoreContainer">
     <EntitySet Name="Students" EntityType="Self.Students" Schema="dbo" store:Type="Tables" />

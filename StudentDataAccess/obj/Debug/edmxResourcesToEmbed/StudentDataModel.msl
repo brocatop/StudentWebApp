@@ -8,7 +8,6 @@
           <ScalarProperty Name="FirstName" ColumnName="FirstName" />
           <ScalarProperty Name="LastName" ColumnName="LastName" />
           <ScalarProperty Name="Major" ColumnName="Major" />
-          <ScalarProperty Name="StudentPassword" ColumnName="StudentPassword" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
