@@ -1,15 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="StudentsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="StudentsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Credentials" EntityType="StudentsModel.Credential" />
+    <EntitySet Name="Students" EntityType="StudentsModel.Student" />
+  </EntityContainer>
+  <EntityType Name="Credential">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" />
+    <Property Name="Username" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Userpassword" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+  </EntityType>
   <EntityType Name="Student">
     <Key>
       <PropertyRef Name="StudentID" />
     </Key>
     <Property Name="StudentID" Type="Int32" Nullable="false" />
-    <Property Name="FirstName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="LastName" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-    <Property Name="Major" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="FirstName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Major" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
   </EntityType>
-  <EntityContainer Name="StudentsEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Students" EntityType="Self.Student" />
-  </EntityContainer>
 </Schema>

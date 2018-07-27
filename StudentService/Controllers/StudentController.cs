@@ -14,7 +14,7 @@ namespace StudentService.Controllers
  
        
         // GET: Student
-        public ActionResult Index()
+        public ActionResult Home()
         {
             List<Student> studentList = std.Students.ToList();
             return View(studentList);

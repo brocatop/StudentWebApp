@@ -25,6 +25,7 @@ namespace StudentDataAccess
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Credential> Credentials { get; set; }
         public virtual DbSet<Student> Students { get; set; }
     }
 }

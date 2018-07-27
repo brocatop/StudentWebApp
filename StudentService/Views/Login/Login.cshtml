@@ -1,0 +1,31 @@
+﻿@model StudentDataAccess.Credential
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/SHared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true, "Login failed. Check your login details.");
+    <div>
+        <fieldset>
+            <legend>Login</legend>
+            <div class="editor-label">
+                <label>Username</label>
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(u => u.Username)
+                @Html.ValidationMessageFor(u => u.Username)
+            </div>
+            <div class="editor-label">
+                <label>Password</label>
+            </div>
+            <div class="editor-field">
+                @Html.PasswordFor(u => u.Userpassword)
+                @Html.ValidationMessageFor(u => u.Userpassword)
+            </div>
+            <input type="submit" value="Log In" />
+        </fieldset>
+    </div>
+}
