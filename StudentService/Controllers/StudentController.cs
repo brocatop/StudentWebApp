@@ -5,9 +5,11 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
 
 namespace StudentService.Controllers
 {
+    [Authorize]
     public class StudentController : Controller
     {
         StudentsEntities std = new StudentsEntities();
@@ -57,7 +59,7 @@ namespace StudentService.Controllers
             }
             std.Students.Remove(student);
             std.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Home");
         }
 
         [HttpPost]
@@ -65,7 +67,7 @@ namespace StudentService.Controllers
         {
             //write code to update student 
 
-            return RedirectToAction("Index");
+            return RedirectToAction("Home");
         }
 
         [HttpPost]
@@ -77,12 +79,18 @@ namespace StudentService.Controllers
                 std.Students.Add(student);
                 std.SaveChanges();
 
-                return RedirectToAction("Index");
+                return RedirectToAction("Home");
             }
             else
             {
                 return View(student);
             }
+        }
+
+        public ActionResult Logout()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("Login", "Login");
         }
     }
 }

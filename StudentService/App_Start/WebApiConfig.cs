@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentService.Handlers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Formatting;
@@ -15,6 +16,8 @@ namespace StudentService
             config.Formatters.Add(new JsonMediaTypeFormatter());
             // Web API routes
             config.MapHttpAttributeRoutes();
+
+            config.MessageHandlers.Add(new TokenValidationHandler());
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

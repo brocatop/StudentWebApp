@@ -102,6 +102,8 @@ C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentService\St
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentService\StudentService\obj\Debug\StudentService.csproj.CopyComplete
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentService\StudentService\obj\Debug\StudentService.dll
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentService\StudentService\obj\Debug\StudentService.pdb
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\obj\Debug\StudentService.csprojAssemblyReference.cache
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\obj\Debug\StudentService.csproj.CoreCompileInputs.cache
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\ApplicationInsights.config
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\StudentService.dll.config
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\StudentService.dll
@@ -164,10 +166,14 @@ C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\Stu
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\Microsoft.ApplicationInsights.dll
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\Microsoft.AspNet.TelemetryCorrelation.dll
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\Microsoft.IdentityModel.Tokens.dll
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\Newtonsoft.Json.dll
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\StudentDataAccess.dll
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\System.Net.Http.Formatting.dll
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\System.Web.Helpers.dll
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\System.Web.Http.dll
@@ -183,6 +189,14 @@ C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\Stu
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\StudentDataAccess.dll.config
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\EntityFramework.xml
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\EntityFramework.SqlServer.xml
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\Microsoft.IdentityModel.Logging.pdb
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\Microsoft.IdentityModel.Tokens.pdb
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\System.IdentityModel.Tokens.Jwt.xml
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\Newtonsoft.Json.xml
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\System.Net.Http.Formatting.xml
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\System.Web.Helpers.xml
@@ -201,8 +215,6 @@ C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\Stu
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\Microsoft.AI.Web.xml
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\obj\Debug\StudentService.csprojAssemblyReference.cache
-C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\obj\Debug\StudentService.csproj.CoreCompileInputs.cache
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\obj\Debug\StudentService.csproj.CopyComplete
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\obj\Debug\StudentService.dll
 C:\Users\patrick.brocato\Documents\Visual Studio 2017\Projects\StudentWebApp\StudentWebApp\StudentService\obj\Debug\StudentService.pdb
