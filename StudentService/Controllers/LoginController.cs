@@ -1,11 +1,6 @@
-﻿using System;
-using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
-using System.Net.Http;
-using System.Security.Claims;
+﻿using System.Linq;
 using System.Web.Mvc;
 using System.Web.Security;
-using Microsoft.ApplicationInsights.Extensibility.Implementation;
 using StudentDataAccess;
 using StudentService.Classes;
 
@@ -37,7 +32,7 @@ namespace StudentService.Controllers
                 if (c != null)
                 {
                     loginHelper.SetAuthenticationToken(c.Username, true, c);
-                    return RedirectToAction("Home", "Student");
+                    return RedirectToAction("Index", "Student");
                 }
                 else
                 {

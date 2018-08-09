@@ -1,0 +1,57 @@
+﻿@model IEnumerable<StudentDataAccess.Student>
+
+@{
+    ViewBag.Title = "Students";
+    Layout = "~/Views/SHared/_Layout.cshtml";
+}
+
+<h2>Students</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@using (Html.BeginForm())
+{
+    <p>
+        Filter: @Html.TextBox("search")
+        <input type="submit" value="Search" />
+    </p>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.ActionLink("First Name", "Index", new { order = ViewBag.NameSortParm })
+        </th>
+        <th>
+            @Html.ActionLink("Last Name", "Index", new { order = ViewBag.DateSortParm })
+        </th>
+        <th>
+            @Html.ActionLink("Major", "Index", new { order = ViewBag.DateSortParm })
+        </th>
+        <th>
+            Options
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Major)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.StudentID }) |
+                @Html.ActionLink("Details", "Details", new { id = item.StudentID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.StudentID })
+            </td>
+        </tr>
+    }
+
+</table>

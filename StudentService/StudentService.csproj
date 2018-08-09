@@ -267,15 +267,15 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Student\Home.cshtml" />
+    <Content Include="Views\Student\Index.cshtml" />
     <Content Include="Views\Student\Edit.cshtml" />
     <Content Include="Views\Student\Details.cshtml" />
     <Content Include="Views\Student\Create.cshtml" />
     <Content Include="Views\Login\Login.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Home\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

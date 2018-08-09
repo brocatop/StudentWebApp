@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 
@@ -16,9 +15,33 @@ namespace StudentService.Controllers
  
        
         // GET: Student
-        public ActionResult Home()
+        public ActionResult Index(string order, string search)
         {
-            List<Student> studentList = std.Students.ToList();
+            ViewBag.NameSortParm = String.IsNullOrEmpty(order) ? "Students" : "";
+            ViewBag.DataSortParm = order == "Major" ? "First Name" : "Major";
+            IQueryable<Student> stu = std.Students;
+            List<Student> studentList = stu.ToList();
+
+            if (!String.IsNullOrEmpty(search))
+            {
+                studentList = stu.Where(s => s.LastName.Contains(search)
+                                       || s.FirstName.Contains(search)
+                                       || s.Major.Contains(search)).ToList();
+                return View(studentList);
+            }
+
+            switch (order)
+            {
+                case "First Name":
+                    studentList = stu.OrderByDescending(s => s.FirstName).ToList();
+                    break;
+                case "Major":
+                    studentList.OrderByDescending(s => s.Major);
+                    break;
+                case "Last Name":
+                    studentList.OrderByDescending(s => s.LastName);
+                    break;
+            }
             return View(studentList);
         }
 
@@ -92,5 +115,13 @@ namespace StudentService.Controllers
             FormsAuthentication.SignOut();
             return RedirectToAction("Login", "Login");
         }
+
+        // This has no functionality with a control yet. However, it should be the proper logic for sorting the students
+        /*
+        public ActionResult OrderBy(string order)
+        {
+                       List<Student> studentList = std.Students.ToList();
+            return View(studentList);
+        } */
     }
 }
