@@ -10,6 +10,7 @@ namespace StudentService.Controllers
     {
 
         LoginHelper loginHelper = new LoginHelper();
+        StudentsEntities s = new StudentsEntities();
 
         // GET: Login
         public ActionResult Login()
@@ -17,7 +18,12 @@ namespace StudentService.Controllers
             return View();
         }
 
-        
+        public ActionResult Register()
+        {
+            return View();
+        }
+
+
         [System.Web.Mvc.HttpPost]
         public ActionResult Login(Credential credential)
         {
@@ -25,10 +31,8 @@ namespace StudentService.Controllers
 
             if (ModelState.IsValid)
             {
-                using (StudentsEntities e = new StudentsEntities())
-                {
-                   c = e.Credentials.FirstOrDefault(u => u.Username == credential.Username && u.Userpassword == credential.Userpassword);
-                }
+                c = s.Credentials.FirstOrDefault(u => u.Username == credential.Username && u.Userpassword == credential.Userpassword);
+
                 if (c != null)
                 {
                     loginHelper.SetAuthenticationToken(c.Username, true, c);
@@ -36,12 +40,29 @@ namespace StudentService.Controllers
                 }
                 else
                 {
-                    
+
                 }
             }
             return RedirectToAction("Login", "Login");
         }
-        
+
+        [HttpPost]
+        public ActionResult Register(Credential c)
+        {
+
+            if (ModelState.IsValid)
+            {
+                s.Credentials.Add(c);
+                s.SaveChanges();
+
+                return RedirectToAction("Login");
+            }
+            else
+            {
+                return View("Register");
+            }
+        }
+
         public ActionResult Logout()
         {
             FormsAuthentication.SignOut();
